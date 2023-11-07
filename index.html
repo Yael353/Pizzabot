@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Welcome to our Pizza Shop!</h2>
+    <form id="pizzaForm">
+      <label for="pizzaType">Choose a pizza:</label>
+      <select id="pizzaType" name="pizzaType">
+        <option value="vegetarian">Vegetarian Pizza</option>
+        <option value="hawaiian">Hawaiian Pizza</option>
+        <option value="pepperoni">Pepperoni Pizza</option>
+      </select>
+      <br /><br />
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" name="quantity" min="1" max="10" />
+      <br /><br />
+      <input type="button" value="Submit" onclick="processOrder()" />
+    </form>
+
+    <p id="orderResult"></p>
+
+    <script src="pizzabot.js"></script>
+    <script src="code/pizzabot.js"></script>
+  </body>
+</html>
